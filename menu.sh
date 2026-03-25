@@ -1,10 +1,10 @@
 #!/bin/bash
 
-entorno=$1
+ENTORNO="$HOME/EPNRo1"
 export FILENAME=resultado
 
 if [[ "$1" == "-d" ]]; then
-    rm -r "$entorno"
+    rm -r "$ENTORNO"
     pkill -f consolidar.sh
     exit
 fi
