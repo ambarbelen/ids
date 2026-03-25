@@ -26,6 +26,7 @@ do
         1)
             mkdir "$entorno"
             mkdir "$entorno/entrada"
+            mv alumnos.txt "$entorno/entrada/"
             mkdir "$entorno/salida"
             mkdir "$entorno/procesado"
             echo "Se creo el entorno."
