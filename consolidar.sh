@@ -1,6 +1,6 @@
 #!/bin/bash
 
-entorno=1
+entorno=$1
 
 for archivo in "$entorno/entrada"/*.txt;
 do
