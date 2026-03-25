@@ -1,11 +1,12 @@
 #!/bin/bash
 
-ENTORNO="$HOME/EPNRo1"
+entorno="$HOME/EPNRo1"
 export FILENAME=resultado
 
 if [[ "$1" == "-d" ]]; then
-    rm -r "$ENTORNO"
     pkill -f consolidar.sh
+    rm -r "$entorno"
+    echo "Entorno eliminado"
     exit
 fi
 
@@ -32,7 +33,7 @@ do
             echo "Se creo el entorno."
             ;;
         2)
-            bash "$entorno-consolidar.sh" "$entorno" &
+            bash "$entorno/consolidar.sh" "$entorno" &
             ;;
 
         3)
